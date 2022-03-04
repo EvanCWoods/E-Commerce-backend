@@ -25,7 +25,7 @@ router.get('/', async (req, res) => {
         attributes: {
           include: [
             [
-              sequelize.literal(
+              sequelize.query(
                 '(SELECT * FROM product_tag WHERE product_tag.tag_id = tag.id)'
               ),
               "tags",
