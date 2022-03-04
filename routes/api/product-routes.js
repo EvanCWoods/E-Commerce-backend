@@ -9,29 +9,15 @@ router.get('/', async (req, res) => {
   // be sure to include its associated Category and Tag data
   try {
     await Product.findAll({
-      attributes: ["id", "product_name", "price", "stock"],
       include: [
         {
-          model: ProductTag,
-        },
-        { 
-          model: Tag,
-          attributes: ["tag_name"]
-        }, 
-        { 
           model: Category,
-          attributes: ["category_name"]
-        }],
-        attributes: {
-          include: [
-            [
-              sequelize.query(
-                '(SELECT * FROM product_tag WHERE product_tag.tag_id = tag.id)'
-              ),
-              "tags",
-            ]
-          ]
+        },
+        {
+          model: Tag,
+          attributes: ["id"]
         }
+      ]
     }).then(data => res.status(200).json(data));
   } catch (err) {
     res.status(500).json(err);
@@ -50,11 +36,9 @@ router.get('/:id', (req, res) => {
       include: [
         {
           model: Tag,
-          attributes: ["tag_name"],
         },
         {
           model: Category,
-          attributes: ["category_name"],
         }
       ]
     }).then(data => res.status(200).json(data));
