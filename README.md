@@ -109,4 +109,4 @@ This app does not have any tests.
 For any questions about the code please see my github for source code, email me at the address provided, or find my social media links on my portfolio website. 
 * https://github.com/EvanCWoods
 * evan.woods.dev@gmail.com
-* https://evancwoods.github.io/Evan-Woods-Portfolio/
+* https://evan-woods-portfolio.herokuapp.com/
