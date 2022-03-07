@@ -31,7 +31,7 @@ This fulfils all of the technical acceptance criteria.
 Currently, there is an issue with the response being defined as wither 500 or 400, on posting to products, however the response should be 200 as the product is created correctly can be interacted with further after its creation. This is seen in the demonstation video. All routes work as intended but the displayed response in some instances is wrong.
 
 ### Video Demo
-A video demonstation of the app can be viewed here: https://drive.google.com/file/d/1BcAMz1r6cp7aBkEULK7NSvDBW_87bMJe/view
+A video demonstation of the app can be viewed here: https://drive.google.com/file/d/13IXmaQKl5LfysSbvpTDhN6DGJ9-AaFza/view
 
 
 ## User Story
