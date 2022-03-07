@@ -28,7 +28,36 @@ This project is an E-Commerce backend built in node js using sequelize as a data
 
 This fulfils all of the technical acceptance criteria.
 
-Currently, there is an issue with the response being defined as wither 500 or 400, on posting to products, however the response should be 200 as the product is created correctly can be interacted with further after its creation. This is seen in the demonstation video. All routes work as intended but the displayed response in some instances is wrong.
+In insomnia, the requests and responses are as follows:
+
+
+* Getting all items at a given endpoint:
+![Get All](Assets/getAll.png)
+
+    The response here is the entire contents of the database table that has been targeted
+
+
+* Getting a single item at a given endpoint:
+![Get One](Assets/getOne.png)
+
+    The response here is the content of the database table that matches to the id at the end of the request as a paramater.
+
+
+* Changing an item at a given endpoint:
+![Changing](Assets/put.png)
+
+
+* Posting (adding) an item to a given endpoint:
+![Posting](Assets/post.png)
+
+    The response here is the effected item in the database.
+
+
+* Deleting an item at a given endpoint:
+![Delete](Assets/delete.png)
+
+    The response here is the effected item in the database.
+
 
 ### Video Demo
 A video demonstation of the app can be viewed here: https://drive.google.com/file/d/13IXmaQKl5LfysSbvpTDhN6DGJ9-AaFza/view
